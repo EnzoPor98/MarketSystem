@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 
 public class Home extends javax.swing.JFrame {
+
     public Home() {
         initComponents();
         setLocationRelativeTo(null);
@@ -27,17 +28,14 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         passField = new javax.swing.JPasswordField();
         jLabel5 = new javax.swing.JLabel();
         quitButton = new javax.swing.JButton();
         inButton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        userField = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -50,6 +48,7 @@ public class Home extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -65,20 +64,14 @@ public class Home extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\User.png")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, 220, 140));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Usuario:");
-        jLabel3.setPreferredSize(new java.awt.Dimension(78, 20));
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, 20));
-
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Enzo Portillo | Derechos Reservados ©");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 790, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 220, -1));
 
         passField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         passField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(passField, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 230, 110, -1));
+        jPanel1.add(passField, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, 110, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -93,7 +86,7 @@ public class Home extends javax.swing.JFrame {
                 quitButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(quitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 270, 70, 40));
+        jPanel1.add(quitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 240, 70, 40));
 
         inButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         inButton.setText("INGRESAR");
@@ -103,17 +96,13 @@ public class Home extends javax.swing.JFrame {
                 inButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(inButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 270, -1, 40));
+        jPanel1.add(inButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 240, -1, 40));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Contraseña:");
         jLabel7.setPreferredSize(new java.awt.Dimension(78, 20));
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 230, -1, 20));
-
-        userField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        userField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(userField, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, 110, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, -1, 20));
 
         jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -124,11 +113,6 @@ public class Home extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("¡ BIENVENIDO A MARKET SYSTEM !");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 530, -1));
-
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Inicie sesión para ingresar al sistema...");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 160, 220, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel9.setText(" manualmente.");
@@ -178,11 +162,16 @@ public class Home extends javax.swing.JFrame {
         jLabel14.setText("información de manera indefinida, hasta que el administrador desee eliminarla");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 510, -1));
 
+        jLabel17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Inicia sesión para ingresar al sistema...");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 220, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jLabel1)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -199,28 +188,33 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     //--------------------------------------------------------------------------
     //--------------------------------------------------------------------------
-    
+
     //----------------------------------------------------------- LOG IN BUTTON.
     private void inButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inButtonActionPerformed
-        try{
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/marketsystem","root","");
+        try {
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/marketsystem", "root", "");
             PreparedStatement pst = cn.prepareStatement("select usuario, contraseña, estado from usuarios");
             ResultSet rs = pst.executeQuery();
-            
-            if(rs.next()){
-                if(rs.getString("usuario").equals(userField.getText()) &&
-                   rs.getString("contraseña").equals(passField.getText()) &&
-                   rs.getString("estado").equals("Activo")){
+
+            if (rs.next()) {
+                if (rs.getString("contraseña").equals(passField.getText())
+                        && rs.getString("estado").equals("Activo")) {
                     this.setVisible(false);
-                    new Manager().setVisible(true);
-                } else if(rs.getString("estado").equals("Inactivo")){
+
+                    if (rs.getString("cargo").equals("Administrador")
+                            || rs.getString("cargo").equals("Técnico")) {
+                        new Manager().setVisible(true);
+                    } else if (rs.getString("cargo").equals("Empleado")) {
+                        new Employee().setVisible(true);
+                    }
+                } else if (rs.getString("estado").equals("Inactivo")) {
                     JOptionPane.showMessageDialog(null, "Lo sentimos, usted no se encuentra activo en la base de datos.");
-                } else{
-                    JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrectos, intente nuevamente.");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Contraseña incorrecta, intente nuevamente.");
                 }
             }
-        } catch(SQLException e){
-            JOptionPane.showMessageDialog(null, "No se ha podido establecer conexión con la base de datos.\n"+e);
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "No se ha podido establecer conexión con la base de datos.\n" + e);
         }
     }//GEN-LAST:event_inButtonActionPerformed
 
@@ -228,15 +222,15 @@ public class Home extends javax.swing.JFrame {
     private void quitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitButtonActionPerformed
         System.exit(0);
     }//GEN-LAST:event_quitButtonActionPerformed
-    
-    //--------------------------------------------------------------------------
+
+    //-------------------------------------------------------------------- MAIN.
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Home().setVisible(true);
         });
     }
     //--------------------------------------------------------------------------
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton inButton;
     private javax.swing.JLabel jLabel1;
@@ -247,22 +241,20 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JPasswordField passField;
     private javax.swing.JButton quitButton;
-    private javax.swing.JTextField userField;
     // End of variables declaration//GEN-END:variables
 }
