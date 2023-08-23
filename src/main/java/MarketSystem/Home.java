@@ -46,7 +46,7 @@ public class Home extends javax.swing.JFrame {
         inButton = new javax.swing.JLabel();
         exitButton = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -173,8 +173,8 @@ public class Home extends javax.swing.JFrame {
         jLabel17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 230, 90));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Background (Home).png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Background (Home).png")); // NOI18N
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -186,7 +186,7 @@ public class Home extends javax.swing.JFrame {
     private void inButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inButtonMouseClicked
         try{
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/marketsystem","root","");
-            PreparedStatement pst = cn.prepareStatement("select name, password, workstation, status from users where password="+passField.getText());
+            PreparedStatement pst = cn.prepareStatement("select name, password, workstation, status from users");
             ResultSet rs = pst.executeQuery();
             
             if(rs.next()){
@@ -194,15 +194,16 @@ public class Home extends javax.swing.JFrame {
                    && rs.getString("status").equals("Activo")){
                     this.setVisible(false);
                     
-                    if(rs.getString("workstation").equals("Administrador")){
+                    if(rs.getString("workstation").equals("Administrador") || 
+                            rs.getString("workstation").equals("Técnico")){
                         new Manager().setVisible(true);
                     } else if(rs.getString("workstation").equals("Empleado")){
                         new Employee().setVisible(true);
                     }
-                } else if(rs.getString("password")!=passField.getText()){
-                    JOptionPane.showMessageDialog(null,"No se encontró ningún usuario con esta contraseña.");
                 } else if(rs.getString("status").equals("Inactivo")){
                     JOptionPane.showMessageDialog(null,"Usted ya no se encuentra activo en el sistema.");
+                } else{
+                    JOptionPane.showMessageDialog(null,"Contraseña incorrecta, intentelo nuevamente.");
                 }
             }
         } catch(SQLException e){
@@ -229,9 +230,9 @@ public class Home extends javax.swing.JFrame {
     //--------------------------------------------------------------------------
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel background;
     private javax.swing.JLabel exitButton;
     private javax.swing.JLabel inButton;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
