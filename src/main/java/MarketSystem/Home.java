@@ -1,7 +1,5 @@
 package MarketSystem;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +9,6 @@ import javax.swing.JOptionPane;
 /**
  * @author Enzo Portillo
  */
-
 public class Home extends javax.swing.JFrame {
 
     public Home() {
@@ -20,9 +17,8 @@ public class Home extends javax.swing.JFrame {
     }
 
     //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- NETBEANS.
     //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -61,7 +57,7 @@ public class Home extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel4.setText("Con este programa podrás gestionar tu negocio en todos sus aspectos. Este sistema incluye...");
+        jLabel4.setText("Con este programa podrás gestionar tu negocio en todos sus aspectos. Este sistema incluye:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 530, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -133,7 +129,7 @@ public class Home extends javax.swing.JFrame {
         jLabel15.setText("      almacenar la información indefinidamente hasta que el administrador desee eliminarla.");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 530, -1));
 
-        inButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        inButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         inButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         inButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\In.png")); // NOI18N
         inButton.setText("INGRESAR");
@@ -147,9 +143,9 @@ public class Home extends javax.swing.JFrame {
                 inButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(inButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, 70, 70));
+        getContentPane().add(inButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 180, 90, 70));
 
-        exitButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        exitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         exitButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         exitButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Quit.png")); // NOI18N
         exitButton.setText("CERRAR");
@@ -163,15 +159,15 @@ public class Home extends javax.swing.JFrame {
                 exitButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 60, 70));
+        getContentPane().add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 70, 70));
 
-        jLabel17.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Accout.png")); // NOI18N
         jLabel17.setText("Inicia sesión para continuar...");
         jLabel17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 230, 90));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 230, 80));
 
         background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Background (Home).png")); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -182,43 +178,57 @@ public class Home extends javax.swing.JFrame {
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- ACTION BUTTONS.
     //--------------------------------------------------------------------------
-    
+
     private void inButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inButtonMouseClicked
-        try{
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/marketsystem","root","");
-            PreparedStatement pst = cn.prepareStatement("select name, password, workstation, status from users");
-            ResultSet rs = pst.executeQuery();
-            
-            if(rs.next()){
-                if(rs.getString("password").equals(passField.getText())
-                   && rs.getString("status").equals("Activo")){
-                    this.setVisible(false);
-                    
-                    if(rs.getString("workstation").equals("Administrador") || 
-                            rs.getString("workstation").equals("Técnico")){
-                        new Manager().setVisible(true);
-                    } else if(rs.getString("workstation").equals("Empleado")){
-                        new Employee().setVisible(true);
+        if (!passField.getText().equals("")) {
+            try {
+                PreparedStatement pst = Data.getConnection().prepareStatement("select name, password, workstation, status from users");
+                ResultSet rs = pst.executeQuery();
+
+                boolean stop = false;
+
+                while (rs.next() && !stop) {
+                    String pass = rs.getString("password");
+                    String status = rs.getString("status");
+
+                    if (pass.equals(passField.getText()) && status.equals("Activo")) {
+                        Data.user = rs.getNString("name").toUpperCase();
+                        String workstation = rs.getString("workstation");
+                        this.setVisible(false);
+
+                        if (workstation.equals("Administrador") || workstation.equals("Técnico")) {
+                            new Manager().setVisible(true);
+                        } else if (workstation.equals("Empleado")) {
+                            new Employee().setVisible(true);
+                        }
+
+                        stop = true;
+                    } else if (pass.equals(passField.getText()) && status.equals("Inactivo")) {
+                        JOptionPane.showMessageDialog(null, "Usted se encuentra inactivo en el sistema.");
+                        stop = true;
                     }
-                } else if(rs.getString("status").equals("Inactivo")){
-                    JOptionPane.showMessageDialog(null,"Usted ya no se encuentra activo en el sistema.");
-                } else{
-                    JOptionPane.showMessageDialog(null,"Contraseña incorrecta, intentelo nuevamente.");
                 }
+
+                passField.setText("");
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos.\n" + e);
             }
-        } catch(SQLException e){
-            JOptionPane.showMessageDialog(null,"No se pudo acceder a la base de datos.\n"+e);
+        } else {
+            JOptionPane.showMessageDialog(null, "Debes escribir una contraseña para continuar.");
         }
     }//GEN-LAST:event_inButtonMouseClicked
+
+    //--------------------------------------------------------------------------
+    //--------------------------------------------------------------------------
+    //--------------------------------------------------------------------------
 
     private void exitButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMouseClicked
         System.exit(0);
     }//GEN-LAST:event_exitButtonMouseClicked
-  
+
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- MAIN.
     //--------------------------------------------------------------------------
-    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Home().setVisible(true);
@@ -226,9 +236,9 @@ public class Home extends javax.swing.JFrame {
     }
 
     //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- NETBEANS.
     //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
     private javax.swing.JLabel exitButton;
