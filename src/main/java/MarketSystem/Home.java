@@ -176,7 +176,7 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     //--------------------------------------------------------------------------
-    //-------------------------------------------------------------------------- ACTION BUTTONS.
+    //-------------------------------------------------------------------------- IN BUTTON.
     //--------------------------------------------------------------------------
 
     private void inButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inButtonMouseClicked
@@ -211,7 +211,7 @@ public class Home extends javax.swing.JFrame {
 
                 passField.setText("");
             } catch (SQLException e) {
-                JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos.\n" + e);
+                Data.errorDBMessage(e);
             }
         } else {
             JOptionPane.showMessageDialog(null, "Debes escribir una contraseña para continuar.");
@@ -219,7 +219,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_inButtonMouseClicked
 
     //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- EXIT BUTTON.
     //--------------------------------------------------------------------------
 
     private void exitButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitButtonMouseClicked
@@ -238,7 +238,6 @@ public class Home extends javax.swing.JFrame {
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- NETBEANS.
     //--------------------------------------------------------------------------
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
     private javax.swing.JLabel exitButton;

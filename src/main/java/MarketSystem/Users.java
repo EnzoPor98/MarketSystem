@@ -16,7 +16,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -25,12 +24,10 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Users extends javax.swing.JFrame {
 
-    DefaultTableModel model;
-
     public Users() {
         initComponents();
         setLocationRelativeTo(null);
-        userDBTable(model);
+        userDBTable(Data.userModel);
         processLabel.setVisible(false);
     }
 
@@ -46,30 +43,6 @@ public class Users extends javax.swing.JFrame {
         contField.setText("");
         searchBox.setSelectedIndex(0);
         searchField.setText("");
-    }
-
-    //--------------------------------------------------------------------------
-    //-------------------------------------------------------------------------- PROCESS LABEL MESSAGE.
-    //--------------------------------------------------------------------------
-    private void setProcess(String letter) {
-        processLabel.setIcon(new ImageIcon("C:/Users/Usuario/OneDrive/Escritorio/Programación/Proyectos Personales/MarketSystem/Images/Done.png"));
-
-        switch (letter) {
-            case "C":
-                processLabel.setText("SE AGREGÓ UN NUEVO USUARIO.");
-                break;
-            case "U":
-                processLabel.setText("SE MODIFICÓ EL USUARIO [ID: " + idField.getText() + "]");
-                break;
-            case "D":
-                processLabel.setText("SE ELIMINÓ EL USUARIO [ID: " + idField.getText() + "]");
-                break;
-            case "P":
-                processLabel.setText("SE CREÓ UN ARCHIVO PDF.");
-                break;
-        }
-        
-        processLabel.setVisible(true);
     }
 
     //--------------------------------------------------------------------------
@@ -104,18 +77,7 @@ public class Users extends javax.swing.JFrame {
 
             Data.getConnection().close();
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
-        }
-    }
-
-    //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-    private void clearTable(DefaultTableModel model) {
-        model = (DefaultTableModel) userTable.getModel();
-
-        while (model.getRowCount() > 0) {
-            model.removeRow(0);
+            Data.errorDBMessage(e);
         }
     }
 
@@ -150,7 +112,7 @@ public class Users extends javax.swing.JFrame {
         refreshButton = new javax.swing.JLabel();
         pdfButton = new javax.swing.JLabel();
         searchButton = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        backButton = new javax.swing.JLabel();
         backgroundLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -166,7 +128,7 @@ public class Users extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Aquí podrás agregar nuevos usuarios y ver, modificar o eliminar usuarios ya existentes en la base de datos.");
+        jLabel3.setText("Aquí podrás agregar nuevos usuarios y ver, modificar o eliminar los ya existentes en la base de datos.");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 780, -1));
 
         searchField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -176,19 +138,19 @@ public class Users extends javax.swing.JFrame {
 
         passField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         passField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(passField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 160, 20));
+        getContentPane().add(passField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 160, 20));
 
         idField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         idField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(idField, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 60, 20));
+        getContentPane().add(idField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 60, 20));
 
         contField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         contField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(contField, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 170, 20));
+        getContentPane().add(contField, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 120, 170, 20));
 
         statusBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         statusBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "---------", "Activo", "Inactivo" }));
-        getContentPane().add(statusBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, -1));
+        getContentPane().add(statusBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, 20));
 
         searchBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         searchBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------------", "ID", "Fecha", "Cargo", "Estado", "Nombre", "Contacto", "Contraseña" }));
@@ -234,7 +196,7 @@ public class Users extends javax.swing.JFrame {
 
         workBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         workBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------------", "Técnico", "Empleado", "Proveedor", "Repartidor", "Distribuidor", "Administrador" }));
-        getContentPane().add(workBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, -1, -1));
+        getContentPane().add(workBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, -1, 20));
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -243,7 +205,7 @@ public class Users extends javax.swing.JFrame {
 
         nameField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 280, 20));
+        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 290, 20));
 
         processLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         processLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -254,13 +216,13 @@ public class Users extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel7.setText("  ID:                        Nombre:                                                                               Contacto:");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 570, 20));
+        jLabel7.setText("ID:                         Nombre:                                                                                Contacto:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 570, 20));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setText("Contraseña:                                                   Cargo:                                            Estado:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 570, 20));
+        jLabel1.setText("Contraseña:                                                      Cargo:                                                   Estado:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 610, 20));
 
         userTable.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         userTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -348,21 +310,21 @@ public class Users extends javax.swing.JFrame {
         });
         getContentPane().add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 30, 25));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Out.png")); // NOI18N
-        jLabel4.setText("VOLVER");
-        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jLabel4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        backButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        backButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        backButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Out.png")); // NOI18N
+        backButton.setText("VOLVER");
+        backButton.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        backButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        backButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        backButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        backButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
+                backButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 190, 70, 70));
+        getContentPane().add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 190, 70, 70));
 
         backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Background (General).png")); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -396,10 +358,10 @@ public class Users extends javax.swing.JFrame {
 
                 pst.executeUpdate();
 
-                setProcess("C");
+                Data.setProcess(processLabel, idField, "C");
                 emptyFields();
             } catch (SQLException e) {
-                JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
+                Data.errorDBMessage(e);
             }
         }
     }//GEN-LAST:event_addButtonMouseClicked
@@ -428,10 +390,10 @@ public class Users extends javax.swing.JFrame {
 
                 pst.executeUpdate();
 
-                setProcess("U");
+                Data.setProcess(processLabel, idField, "U");
                 emptyFields();
             } catch (SQLException e) {
-                JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
+                Data.errorDBMessage(e);
             }
         }
     }//GEN-LAST:event_editButtonMouseClicked
@@ -441,14 +403,18 @@ public class Users extends javax.swing.JFrame {
     //--------------------------------------------------------------------------
 
     private void deleteButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteButtonMouseClicked
-        try {
-            PreparedStatement pst = Data.getConnection().prepareStatement("delete from users where ID=" + idField.getText());
-            pst.executeUpdate();
+        if (idField.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Debes seleccionar un usuario de la lista antes de presionar el boton de eliminar.");
+        } else {
+            try {
+                PreparedStatement pst = Data.getConnection().prepareStatement("delete from users where ID=" + idField.getText());
+                pst.executeUpdate();
 
-            setProcess("D");
-            emptyFields();
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
+                Data.setProcess(processLabel, idField, "D");
+                emptyFields();
+            } catch (SQLException e) {
+                Data.errorDBMessage(e);
+            }
         }
     }//GEN-LAST:event_deleteButtonMouseClicked
 
@@ -457,10 +423,9 @@ public class Users extends javax.swing.JFrame {
     //--------------------------------------------------------------------------
 
     private void refreshButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refreshButtonMouseClicked
-        clearTable(model);
-        userDBTable(model);
+        Data.clearTable(Data.userModel, userTable);
+        userDBTable(Data.userModel);
         emptyFields();
-        
         processLabel.setVisible(false);
     }//GEN-LAST:event_refreshButtonMouseClicked
 
@@ -512,11 +477,11 @@ public class Users extends javax.swing.JFrame {
                     documento.add(table);
                 }
             } catch (SQLException e) {
-                JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
+                Data.errorDBMessage(e);
             }
 
             documento.close();
-            setProcess("P");
+            Data.setProcess(processLabel, idField, "P");
         } catch (DocumentException | FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "No se pudo crear al archivo PDF." + "\n" + e);
         }
@@ -528,7 +493,7 @@ public class Users extends javax.swing.JFrame {
 
     private void searchButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchButtonMouseClicked
         if (!searchField.getText().equals("") && searchBox.getSelectedIndex() != 0) {
-            clearTable(model);
+            Data.clearTable(Data.userModel, userTable);
             String search = "";
 
             if (searchBox.getSelectedItem().equals("ID")) {
@@ -553,21 +518,22 @@ public class Users extends javax.swing.JFrame {
 
                 while (rs.next()) {
                     if (rs.getString(search).contains(searchField.getText())) {
-                        model = (DefaultTableModel) userTable.getModel();
+                        Data.userModel = (DefaultTableModel) userTable.getModel();
                         Object[] fila = new Object[7];
 
                         for (int i = 0; i < 7; i++) {
                             fila[i] = rs.getObject(i + 1);
                         }
 
-                        model.addRow(fila);
-                        Data.getConnection().close();
+                        Data.userModel.addRow(fila);
                     }
                 }
 
+                Data.getConnection().close();
                 emptyFields();
+                processLabel.setVisible(false);
             } catch (SQLException e) {
-                JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
+                Data.errorDBMessage(e);
             }
         } else if (searchField.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Campo de búsqueda vacío.");
@@ -575,6 +541,10 @@ public class Users extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Debes seleccionar una opción en la caja de FILTRO.");
         }
     }//GEN-LAST:event_searchButtonMouseClicked
+
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- TABLE EVENT.
+    //--------------------------------------------------------------------------
 
     private void userTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userTableMouseClicked
         if (userTable.getSelectedRowCount() > 0) {
@@ -584,7 +554,6 @@ public class Users extends javax.swing.JFrame {
             workBox.setSelectedItem(userTable.getValueAt(userTable.getSelectedRow(), 3).toString());
             statusBox.setSelectedItem(userTable.getValueAt(userTable.getSelectedRow(), 4).toString());
             contField.setText(userTable.getValueAt(userTable.getSelectedRow(), 6).toString());
-
         }
     }//GEN-LAST:event_userTableMouseClicked
 
@@ -592,21 +561,16 @@ public class Users extends javax.swing.JFrame {
     //-------------------------------------------------------------------------- BACK BUTTON.
     //--------------------------------------------------------------------------
 
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+    private void backButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backButtonMouseClicked
         this.setVisible(false);
-    }//GEN-LAST:event_jLabel4MouseClicked
+    }//GEN-LAST:event_backButtonMouseClicked
 
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- NETBEANS.
     //--------------------------------------------------------------------------
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(() -> {
-            new Users().setVisible(true);
-        });
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel addButton;
+    private javax.swing.JLabel backButton;
     private javax.swing.JLabel backgroundLabel;
     private javax.swing.JTextField contField;
     private javax.swing.JLabel deleteButton;
@@ -617,7 +581,6 @@ public class Users extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator2;
