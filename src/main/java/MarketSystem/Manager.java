@@ -3,19 +3,17 @@ package MarketSystem;
 /**
  * @author Enzo Portillo
  */
-
 public class Manager extends javax.swing.JFrame {
-    
+
     public Manager() {
         initComponents();
         setLocationRelativeTo(null);
-        welcomeLabel.setText("¡ BIENVENIDO "+Data.user+" !");
+        Data.setWelcome(welcomeLabel);
     }
 
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- NETBEANS.
     //--------------------------------------------------------------------------
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -26,13 +24,13 @@ public class Manager extends javax.swing.JFrame {
         userButton = new javax.swing.JLabel();
         inventoryButton = new javax.swing.JLabel();
         salesButton = new javax.swing.JLabel();
-        marketButton = new javax.swing.JLabel();
         supportButton = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        backgroundLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("MarketSystem - Administrador");
         setBackground(new java.awt.Color(255, 255, 255));
         setUndecorated(true);
         setResizable(false);
@@ -40,7 +38,7 @@ public class Manager extends javax.swing.JFrame {
 
         outButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         outButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        outButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Out.png")); // NOI18N
+        outButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Out.png")); // NOI18N
         outButton.setText("VOLVER");
         outButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         outButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -51,7 +49,7 @@ public class Manager extends javax.swing.JFrame {
                 outButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(outButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 100, -1));
+        getContentPane().add(outButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 100, -1));
 
         welcomeLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         welcomeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -65,7 +63,7 @@ public class Manager extends javax.swing.JFrame {
 
         userButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         userButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        userButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\UsersManager.png")); // NOI18N
+        userButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Users.png")); // NOI18N
         userButton.setText("USUARIOS");
         userButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         userButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -80,7 +78,7 @@ public class Manager extends javax.swing.JFrame {
 
         inventoryButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         inventoryButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        inventoryButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Inventory.png")); // NOI18N
+        inventoryButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Inventory.png")); // NOI18N
         inventoryButton.setText("INVENTARIO");
         inventoryButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         inventoryButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -95,7 +93,7 @@ public class Manager extends javax.swing.JFrame {
 
         salesButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         salesButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        salesButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Sales.png")); // NOI18N
+        salesButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Sales.png")); // NOI18N
         salesButton.setText("VENTAS");
         salesButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         salesButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -108,24 +106,9 @@ public class Manager extends javax.swing.JFrame {
         });
         getContentPane().add(salesButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 100, -1));
 
-        marketButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        marketButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        marketButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Market.png")); // NOI18N
-        marketButton.setText("NEGOCIOS");
-        marketButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        marketButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        marketButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        marketButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        marketButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                marketButtonMouseClicked(evt);
-            }
-        });
-        getContentPane().add(marketButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 100, -1));
-
         supportButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         supportButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        supportButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Help.png")); // NOI18N
+        supportButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Help.png")); // NOI18N
         supportButton.setText("SOPORTE");
         supportButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supportButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -136,7 +119,7 @@ public class Manager extends javax.swing.JFrame {
                 supportButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(supportButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 100, -1));
+        getContentPane().add(supportButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 100, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -144,36 +127,43 @@ public class Manager extends javax.swing.JFrame {
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 380, -1));
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Background (Manager).png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Background (Manager).png")); // NOI18N
+        getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     //--------------------------------------------------------------------------
-    //-------------------------------------------------------------------------- ACTION BUTTONS.
+    //-------------------------------------------------------------------------- USERS BUTTON.
     //--------------------------------------------------------------------------
-    
     private void userButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userButtonMouseClicked
         new Users().setVisible(true);
     }//GEN-LAST:event_userButtonMouseClicked
 
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- INVENTORY BUTTON.
+    //--------------------------------------------------------------------------
     private void inventoryButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inventoryButtonMouseClicked
         new Inventory().setVisible(true);
     }//GEN-LAST:event_inventoryButtonMouseClicked
 
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- SALES BUTTON.
+    //--------------------------------------------------------------------------
     private void salesButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salesButtonMouseClicked
         new Sales().setVisible(true);
     }//GEN-LAST:event_salesButtonMouseClicked
 
-    private void marketButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_marketButtonMouseClicked
-        new Markets().setVisible(true);
-    }//GEN-LAST:event_marketButtonMouseClicked
-
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- SUPPORT BUTTON.
+    //--------------------------------------------------------------------------
     private void supportButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_supportButtonMouseClicked
         Data.getInfo();
     }//GEN-LAST:event_supportButtonMouseClicked
 
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- OUT BUTTON.
+    //--------------------------------------------------------------------------
     private void outButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_outButtonMouseClicked
         this.setVisible(false);
         new Home().setVisible(true);
@@ -182,14 +172,13 @@ public class Manager extends javax.swing.JFrame {
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- NETBEANS.
     //--------------------------------------------------------------------------
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel backgroundLabel;
     private javax.swing.JLabel inventoryButton;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel marketButton;
     private javax.swing.JLabel outButton;
     private javax.swing.JLabel salesButton;
     private javax.swing.JLabel supportButton;

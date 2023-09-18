@@ -7,9 +7,11 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -27,10 +29,16 @@ public class Data {
     protected static String user;
 
     //--------------------------------------------------------------------------
-    //-------------------------------------------------------------------------- DATE.
+    //-------------------------------------------------------------------------- DATE && HOUR.
     //--------------------------------------------------------------------------
     protected static String getDate() {
         DateFormat dateFormat = new SimpleDateFormat("d/M/YYYY");
+        String date = dateFormat.format(new Date());
+        return date;
+    }
+
+    protected static String getHour() {
+        DateFormat dateFormat = new SimpleDateFormat("HH:mm");
         String date = dateFormat.format(new Date());
         return date;
     }
@@ -39,8 +47,8 @@ public class Data {
     //-------------------------------------------------------------------------- SUPPORT INFO.
     //--------------------------------------------------------------------------
     protected static void getInfo() {
-        JOptionPane.showMessageDialog(null, "Si tiene problemas o consultas sobre el programa, comuníquese con el técnico"
-                + "\n" + "Nombre: Enzo Portillo"
+        JOptionPane.showMessageDialog(null, "Si tiene problemas o consultas sobre el programa, comuníquese con el técnico:"
+                + "\n\n" + "Nombre: Enzo Portillo"
                 + "\n" + "Contacto: +54 9 345 4753433"
                 + "\n" + "Correo: enzoarielportillo1@gmail.com");
     }
@@ -62,20 +70,20 @@ public class Data {
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- PROCESS LABEL MESSAGE.
     //--------------------------------------------------------------------------
-    protected static void setProcess(JLabel processLabel, JTextField idField, String letter) {
-        processLabel.setIcon(new ImageIcon("C:/Users/Usuario/OneDrive/Escritorio/Programación/Proyectos Personales/MarketSystem/Images/Done.png"));
+    protected static void setProcess(JLabel processLabel, JTextField idField, char letter) {
+        processLabel.setIcon(new ImageIcon("C:/Users/Usuario/OneDrive/Escritorio/Programación/Proyectos Personales/MarketSystem/src/Images/Done.png"));
 
         switch (letter) {
-            case "C":
+            case 'C':
                 processLabel.setText("SE AGREGÓ UN NUEVO ELEMENTO.");
                 break;
-            case "U":
+            case 'U':
                 processLabel.setText("SE MODIFICÓ EL ELEMENTO [ID: " + idField.getText() + "]");
                 break;
-            case "D":
+            case 'D':
                 processLabel.setText("SE ELIMINÓ EL ELEMENTO [ID: " + idField.getText() + "]");
                 break;
-            case "P":
+            case 'P':
                 processLabel.setText("SE CREÓ UN ARCHIVO PDF.");
                 break;
         }
@@ -88,6 +96,9 @@ public class Data {
     //--------------------------------------------------------------------------
     protected static DefaultTableModel userModel;
     protected static DefaultTableModel productModel;
+    protected static DefaultTableModel salesModel;
+    protected static DefaultTableModel cartModel;
+    protected static DefaultTableModel employeeModel;
 
     //--------------------------------------------------------------------------
     //-------------------------------------------------------------------------- CLEAR TABLE.
@@ -107,5 +118,23 @@ public class Data {
         JOptionPane.showMessageDialog(null, "No se pudo acceder a la base de datos." + "\n" + e);
     }
 
-    
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- ARRAYLIST OF PRODUCTS.
+    //--------------------------------------------------------------------------
+    protected static ArrayList<Product> productList = new ArrayList<>();
+
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- WELCOME LABEL.
+    //--------------------------------------------------------------------------
+    protected static void setWelcome(JLabel label) {
+        label.setText("¡ BIENVENIDO " + user.toUpperCase() + " !");
+    }
+
+    //--------------------------------------------------------------------------
+    //-------------------------------------------------------------------------- EMPTY SEARCH FIELDS.
+    //--------------------------------------------------------------------------
+    protected static void setEmptySearch(JComboBox box, JTextField search) {
+        box.setSelectedIndex(0);
+        search.setText("");
+    }
 }

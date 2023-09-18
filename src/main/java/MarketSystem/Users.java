@@ -46,7 +46,7 @@ public class Users extends javax.swing.JFrame {
     }
 
     //--------------------------------------------------------------------------
-    //-------------------------------------------------------------------------- TABLE METODS.
+    //-------------------------------------------------------------------------- TABLE METOD.
     //--------------------------------------------------------------------------
     private void userDBTable(DefaultTableModel model) {
         try {
@@ -116,6 +116,7 @@ public class Users extends javax.swing.JFrame {
         backgroundLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("MarketSystem - Usuarios");
         setBackground(new java.awt.Color(255, 255, 255));
         setUndecorated(true);
         setResizable(false);
@@ -138,27 +139,30 @@ public class Users extends javax.swing.JFrame {
 
         passField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         passField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        passField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(passField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 160, 20));
 
         idField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         idField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        idField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(idField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 60, 20));
 
         contField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         contField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        contField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(contField, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 120, 170, 20));
 
-        statusBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        statusBox.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         statusBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "---------", "Activo", "Inactivo" }));
         getContentPane().add(statusBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, 20));
 
-        searchBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        searchBox.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         searchBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------------", "ID", "Fecha", "Cargo", "Estado", "Nombre", "Contacto", "Contraseña" }));
         getContentPane().add(searchBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 560, -1, 25));
 
         addButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         addButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        addButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Add.png")); // NOI18N
+        addButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Add.png")); // NOI18N
         addButton.setText("AÑADIR");
         addButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         addButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -169,11 +173,11 @@ public class Users extends javax.swing.JFrame {
                 addButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(addButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 190, 60, 70));
+        getContentPane().add(addButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 180, 60, 70));
 
         editButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         editButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        editButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Edit.png")); // NOI18N
+        editButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Edit.png")); // NOI18N
         editButton.setText("EDITAR");
         editButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         editButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -184,7 +188,7 @@ public class Users extends javax.swing.JFrame {
                 editButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(editButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 60, 70));
+        getContentPane().add(editButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 60, 70));
 
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 780, 10));
@@ -194,9 +198,9 @@ public class Users extends javax.swing.JFrame {
         jLabel15.setText("Completa los campos para agregar un nuevo usuario o selecciona uno de la tabla para modificar sus datos...");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 780, -1));
 
-        workBox.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        workBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------------", "Técnico", "Empleado", "Proveedor", "Repartidor", "Distribuidor", "Administrador" }));
-        getContentPane().add(workBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, -1, 20));
+        workBox.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        workBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "------------------", "Técnico", "Empleado", "Proveedor", "Repartidor", "Distribuidor", "Administrador" }));
+        getContentPane().add(workBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 150, 130, 20));
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -205,14 +209,15 @@ public class Users extends javax.swing.JFrame {
 
         nameField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        nameField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 290, 20));
 
-        processLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        processLabel.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         processLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         processLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         processLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         processLabel.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        getContentPane().add(processLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 270, 70));
+        getContentPane().add(processLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 270, 70));
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -249,11 +254,11 @@ public class Users extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(userTable);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 760, 270));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 780, 290));
 
         deleteButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         deleteButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        deleteButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Delete.png")); // NOI18N
+        deleteButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Delete.png")); // NOI18N
         deleteButton.setText("ELIMINAR");
         deleteButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         deleteButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -264,11 +269,11 @@ public class Users extends javax.swing.JFrame {
                 deleteButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(deleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 190, 70, 70));
+        getContentPane().add(deleteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 70, 70));
 
         refreshButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         refreshButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        refreshButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Refresh.png")); // NOI18N
+        refreshButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Refresh.png")); // NOI18N
         refreshButton.setText("ACTUALIZAR");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         refreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -279,11 +284,11 @@ public class Users extends javax.swing.JFrame {
                 refreshButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 190, 80, 70));
+        getContentPane().add(refreshButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 80, 70));
 
         pdfButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         pdfButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pdfButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\PDF.png")); // NOI18N
+        pdfButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\PDF.png")); // NOI18N
         pdfButton.setText("CREAR PDF");
         pdfButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         pdfButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -294,11 +299,11 @@ public class Users extends javax.swing.JFrame {
                 pdfButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(pdfButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 70, 70));
+        getContentPane().add(pdfButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, 70, 70));
 
         searchButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         searchButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        searchButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Search.png")); // NOI18N
+        searchButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Search.png")); // NOI18N
         searchButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -312,7 +317,7 @@ public class Users extends javax.swing.JFrame {
 
         backButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         backButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        backButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Out.png")); // NOI18N
+        backButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Out.png")); // NOI18N
         backButton.setText("VOLVER");
         backButton.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -324,9 +329,9 @@ public class Users extends javax.swing.JFrame {
                 backButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 190, 70, 70));
+        getContentPane().add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 70, 70));
 
-        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\Images\\Background (General).png")); // NOI18N
+        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Background (General).png")); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -340,7 +345,7 @@ public class Users extends javax.swing.JFrame {
         if (nameField.getText().equals("") || contField.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Completa el formulario para poder agregar un nuevo usuario.");
         } else if (passField.getText().equals("") && workBox.getSelectedItem().equals("Administrador")
-                || workBox.getSelectedItem().equals("Empleado")) {
+                || passField.getText().equals("") && workBox.getSelectedItem().equals("Empleado")) {
             JOptionPane.showMessageDialog(null, "Debes asignarle una contraseña al usuario para el cargo seleccionado.");
         } else if (workBox.getSelectedIndex() == 0 || statusBox.getSelectedIndex() == 0) {
             JOptionPane.showMessageDialog(null, "Debes seleccionar una opción en las cajas de CARGO y ESTADO.");
@@ -358,7 +363,7 @@ public class Users extends javax.swing.JFrame {
 
                 pst.executeUpdate();
 
-                Data.setProcess(processLabel, idField, "C");
+                Data.setProcess(processLabel, idField, 'C');
                 emptyFields();
             } catch (SQLException e) {
                 Data.errorDBMessage(e);
@@ -390,7 +395,7 @@ public class Users extends javax.swing.JFrame {
 
                 pst.executeUpdate();
 
-                Data.setProcess(processLabel, idField, "U");
+                Data.setProcess(processLabel, idField, 'U');
                 emptyFields();
             } catch (SQLException e) {
                 Data.errorDBMessage(e);
@@ -410,7 +415,7 @@ public class Users extends javax.swing.JFrame {
                 PreparedStatement pst = Data.getConnection().prepareStatement("delete from users where ID=" + idField.getText());
                 pst.executeUpdate();
 
-                Data.setProcess(processLabel, idField, "D");
+                Data.setProcess(processLabel, idField, 'D');
                 emptyFields();
             } catch (SQLException e) {
                 Data.errorDBMessage(e);
@@ -481,7 +486,7 @@ public class Users extends javax.swing.JFrame {
             }
 
             documento.close();
-            Data.setProcess(processLabel, idField, "P");
+            Data.setProcess(processLabel, idField, 'P');
         } catch (DocumentException | FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "No se pudo crear al archivo PDF." + "\n" + e);
         }
