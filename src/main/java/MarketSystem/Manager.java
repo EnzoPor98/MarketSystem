@@ -38,7 +38,7 @@ public class Manager extends javax.swing.JFrame {
 
         outButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         outButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        outButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Out.png")); // NOI18N
+        outButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Quit.png"))); // NOI18N
         outButton.setText("VOLVER");
         outButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         outButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -63,7 +63,7 @@ public class Manager extends javax.swing.JFrame {
 
         userButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         userButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        userButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Users.png")); // NOI18N
+        userButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Users.png"))); // NOI18N
         userButton.setText("USUARIOS");
         userButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         userButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -78,7 +78,7 @@ public class Manager extends javax.swing.JFrame {
 
         inventoryButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         inventoryButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        inventoryButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Inventory.png")); // NOI18N
+        inventoryButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Inventory.png"))); // NOI18N
         inventoryButton.setText("INVENTARIO");
         inventoryButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         inventoryButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -93,7 +93,7 @@ public class Manager extends javax.swing.JFrame {
 
         salesButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         salesButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        salesButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Sales.png")); // NOI18N
+        salesButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Sales.png"))); // NOI18N
         salesButton.setText("VENTAS");
         salesButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         salesButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -108,7 +108,7 @@ public class Manager extends javax.swing.JFrame {
 
         supportButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         supportButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        supportButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Help.png")); // NOI18N
+        supportButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Help.png"))); // NOI18N
         supportButton.setText("SOPORTE");
         supportButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         supportButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -127,7 +127,7 @@ public class Manager extends javax.swing.JFrame {
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 380, -1));
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Background (Manager).png")); // NOI18N
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Background (Manager).png"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();

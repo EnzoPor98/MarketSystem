@@ -38,7 +38,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Out.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Quit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VOLVER"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -96,7 +96,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Users.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Users.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="USUARIOS"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -126,7 +126,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Inventory.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Inventory.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="INVENTARIO"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -156,7 +156,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Sales.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Sales.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VENTAS"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -186,7 +186,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Help.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Help.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SOPORTE"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -233,7 +233,7 @@
     <Component class="javax.swing.JLabel" name="backgroundLabel">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Background (Manager).png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Background (Manager).png"/>
         </Property>
       </Properties>
       <Constraints>

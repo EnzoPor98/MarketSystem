@@ -133,7 +133,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Search.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Search.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -196,7 +196,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\PDF.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/PDF.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="ENTRE FECHAS"/>
         <Property name="verticalAlignment" type="int" value="1"/>
@@ -227,7 +227,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Out.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Out.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VOLVER"/>
         <Property name="verticalAlignment" type="int" value="1"/>
@@ -258,7 +258,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\PDF.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/PDF.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="FECHA"/>
         <Property name="verticalAlignment" type="int" value="1"/>
@@ -309,7 +309,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\PDF.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/PDF.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="HOY"/>
         <Property name="verticalAlignment" type="int" value="1"/>
@@ -336,7 +336,7 @@
     <Component class="javax.swing.JLabel" name="backgroundLabel">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Background (General).png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Background (General).png"/>
         </Property>
       </Properties>
       <Constraints>

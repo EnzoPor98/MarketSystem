@@ -132,7 +132,7 @@ public class Home extends javax.swing.JFrame {
 
         inButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         inButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        inButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\In.png")); // NOI18N
+        inButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/In.png"))); // NOI18N
         inButton.setText("INGRESAR");
         inButton.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         inButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -148,7 +148,7 @@ public class Home extends javax.swing.JFrame {
 
         exitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         exitButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        exitButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Quit.png")); // NOI18N
+        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Quit.png"))); // NOI18N
         exitButton.setText("CERRAR");
         exitButton.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         exitButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -164,13 +164,13 @@ public class Home extends javax.swing.JFrame {
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Accout.png")); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Accout.png"))); // NOI18N
         jLabel17.setText("Inicia sesión para continuar...");
         jLabel17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 230, 80));
 
-        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Background (Home).png")); // NOI18N
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Background (Home).png"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();

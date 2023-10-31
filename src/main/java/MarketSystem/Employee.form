@@ -149,7 +149,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Sell.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Sell.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VENDER"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -179,7 +179,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Cart.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Cart.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VER"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -209,7 +209,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Quit.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Quit.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SALIR"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -262,7 +262,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Cart (empty).png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Cart (empty).png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VACIAR"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -383,7 +383,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Sales.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Sales.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VENTAS"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -413,7 +413,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Cart (add).png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Cart (add).png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="A&#xd1;ADIR"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -443,7 +443,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Refresh.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Refresh.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="ACTUALIZAR"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -473,7 +473,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Search.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Search.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -572,7 +572,7 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Calculate.png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Calculate.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="TOTAL"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -598,7 +598,7 @@
     <Component class="javax.swing.JLabel" name="backgroundLabel">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Usuario\OneDrive\Escritorio\Programaci&#xf3;n\Proyectos Personales\MarketSystem\src\Images\Background (General).png"/>
+          <Image iconType="3" name="/MarketSystem/Images/Background (General).png"/>
         </Property>
       </Properties>
       <Constraints>

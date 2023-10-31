@@ -237,7 +237,7 @@ public class Employee extends javax.swing.JFrame {
 
         sellButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         sellButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sellButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Sell.png")); // NOI18N
+        sellButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Sell.png"))); // NOI18N
         sellButton.setText("VENDER");
         sellButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         sellButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -252,7 +252,7 @@ public class Employee extends javax.swing.JFrame {
 
         viewButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         viewButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        viewButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Cart.png")); // NOI18N
+        viewButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Cart.png"))); // NOI18N
         viewButton.setText("VER");
         viewButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         viewButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -267,7 +267,7 @@ public class Employee extends javax.swing.JFrame {
 
         backButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         backButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        backButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Quit.png")); // NOI18N
+        backButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Quit.png"))); // NOI18N
         backButton.setText("SALIR");
         backButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         backButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -290,7 +290,7 @@ public class Employee extends javax.swing.JFrame {
 
         emptyButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         emptyButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        emptyButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Cart (empty).png")); // NOI18N
+        emptyButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Cart (empty).png"))); // NOI18N
         emptyButton.setText("VACIAR");
         emptyButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         emptyButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -346,7 +346,7 @@ public class Employee extends javax.swing.JFrame {
 
         salesButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         salesButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        salesButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Sales.png")); // NOI18N
+        salesButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Sales.png"))); // NOI18N
         salesButton.setText("VENTAS");
         salesButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         salesButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -361,7 +361,7 @@ public class Employee extends javax.swing.JFrame {
 
         addButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         addButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        addButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Cart (add).png")); // NOI18N
+        addButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Cart (add).png"))); // NOI18N
         addButton.setText("AÑADIR");
         addButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         addButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -376,7 +376,7 @@ public class Employee extends javax.swing.JFrame {
 
         refreshButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         refreshButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        refreshButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Refresh.png")); // NOI18N
+        refreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Refresh.png"))); // NOI18N
         refreshButton.setText("ACTUALIZAR");
         refreshButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         refreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -391,7 +391,7 @@ public class Employee extends javax.swing.JFrame {
 
         searchButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         searchButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        searchButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Search.png")); // NOI18N
+        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Search.png"))); // NOI18N
         searchButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -436,7 +436,7 @@ public class Employee extends javax.swing.JFrame {
 
         calculateButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         calculateButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        calculateButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Calculate.png")); // NOI18N
+        calculateButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Calculate.png"))); // NOI18N
         calculateButton.setText("TOTAL");
         calculateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         calculateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -449,7 +449,7 @@ public class Employee extends javax.swing.JFrame {
         });
         getContentPane().add(calculateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 160, 50, 70));
 
-        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Background (General).png")); // NOI18N
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Background (General).png"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();

@@ -183,7 +183,7 @@ public class Sales extends javax.swing.JFrame {
 
         searchButton3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         searchButton3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        searchButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Search.png")); // NOI18N
+        searchButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Search.png"))); // NOI18N
         searchButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         searchButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -210,7 +210,7 @@ public class Sales extends javax.swing.JFrame {
 
         pdfButton3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         pdfButton3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pdfButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\PDF.png")); // NOI18N
+        pdfButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/PDF.png"))); // NOI18N
         pdfButton3.setText("ENTRE FECHAS");
         pdfButton3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         pdfButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -226,7 +226,7 @@ public class Sales extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Out.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Out.png"))); // NOI18N
         jLabel4.setText("VOLVER");
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -242,7 +242,7 @@ public class Sales extends javax.swing.JFrame {
 
         pdfButton2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         pdfButton2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pdfButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\PDF.png")); // NOI18N
+        pdfButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/PDF.png"))); // NOI18N
         pdfButton2.setText("FECHA");
         pdfButton2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         pdfButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -265,7 +265,7 @@ public class Sales extends javax.swing.JFrame {
 
         pdfButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         pdfButton1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pdfButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\PDF.png")); // NOI18N
+        pdfButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/PDF.png"))); // NOI18N
         pdfButton1.setText("HOY");
         pdfButton1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         pdfButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -279,7 +279,7 @@ public class Sales extends javax.swing.JFrame {
         });
         getContentPane().add(pdfButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, 70, 70));
 
-        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\OneDrive\\Escritorio\\Programación\\Proyectos Personales\\MarketSystem\\src\\Images\\Background (General).png")); // NOI18N
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MarketSystem/Images/Background (General).png"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
