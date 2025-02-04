@@ -109,6 +109,23 @@ public class Home extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
         SalesTab = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        jTextField20 = new javax.swing.JTextField();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jTextField22 = new javax.swing.JTextField();
+        jLabel58 = new javax.swing.JLabel();
+        jTextField27 = new javax.swing.JTextField();
+        jLabel59 = new javax.swing.JLabel();
+        jTextField28 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTable7 = new javax.swing.JTable();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        jSeparator9 = new javax.swing.JSeparator();
+        MyCompanyTab = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -168,14 +185,14 @@ public class Home extends javax.swing.JFrame {
         jLabel40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 30, 30));
+        BoxTab.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, 30, 30));
 
         jTextField17.setEditable(false);
         jTextField17.setBackground(new java.awt.Color(255, 255, 255));
         jTextField17.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextField17.setForeground(new java.awt.Color(0, 0, 0));
         jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 0, 130, 30));
+        BoxTab.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 0, 130, 30));
 
         jLabel41.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(0, 0, 0));
@@ -189,7 +206,7 @@ public class Home extends javax.swing.JFrame {
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel42.setText("SUBTOTAL: $");
         jLabel42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 100, 30));
+        BoxTab.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 100, 30));
 
         jLabel43.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(0, 0, 0));
@@ -218,7 +235,7 @@ public class Home extends javax.swing.JFrame {
         jTextField19.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextField19.setForeground(new java.awt.Color(0, 0, 0));
         jTextField19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 100, 30));
+        BoxTab.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 80, 30));
 
         jTable3.setBackground(new java.awt.Color(255, 255, 255));
         jTable3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -228,11 +245,11 @@ public class Home extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Producto", "Categoria", "Costo", "Stock", "Ult. Ingreso"
+                "ID", "Producto", "Costo Unitario", "Cantidad", "SubTotal"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, true, true, true, true, true
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -243,8 +260,9 @@ public class Home extends javax.swing.JFrame {
 
         BoxTab.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 1140, 200));
 
+        jButton4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton4.setText("CARGA VIRTUAL");
-        BoxTab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 240, -1, 30));
+        BoxTab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, -1, 30));
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
@@ -289,11 +307,13 @@ public class Home extends javax.swing.JFrame {
         jLabel46.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         BoxTab.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 590, 240, 60));
 
+        jButton5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton5.setText("AGREGAR AL CARRITO");
-        BoxTab.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 150, 30));
+        BoxTab.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 0, 170, 30));
 
+        jButton6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton6.setText("VACIAR CARRITO");
-        BoxTab.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1018, 240, -1, 30));
+        BoxTab.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 240, -1, 30));
 
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
@@ -340,11 +360,13 @@ public class Home extends javax.swing.JFrame {
         jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         BoxTab.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, 140, 30));
 
+        jButton7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton7.setText("DESCARTAR PRODUCTO");
-        BoxTab.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 240, -1, 30));
+        BoxTab.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 240, -1, 30));
 
+        jButton8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton8.setText("CARGA SUBE");
-        BoxTab.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 240, -1, 30));
+        BoxTab.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 240, -1, 30));
 
         jLabel52.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(0, 0, 0));
@@ -666,9 +688,11 @@ public class Home extends javax.swing.JFrame {
         jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
         InventoryTab.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, 220, 30));
 
+        jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton1.setText("APLICAR");
         InventoryTab.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 230, 90, 30));
 
+        jButton2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton2.setText("AGREGAR CAT.");
         InventoryTab.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 120, 30));
 
@@ -779,11 +803,133 @@ public class Home extends javax.swing.JFrame {
 
         InventoryTab.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1140, 380));
 
+        jButton3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jButton3.setText("ELIMINAR CAT.");
         InventoryTab.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, 120, 30));
 
         jTabbedPane1.addTab("InventoryTab", InventoryTab);
+
+        SalesTab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel50.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel50.setText("Y");
+        jLabel50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        SalesTab.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 40, 20, 30));
+
+        jTextField20.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField20.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField20.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        SalesTab.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 110, 30));
+
+        jLabel54.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel54.setText("OBSERVA TODAS LAS VENTAS QUE SE HAN ALMACENADO EN TU BASE DE DATOS...");
+        jLabel54.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        SalesTab.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 30));
+
+        jLabel57.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel57.setText("BUSCAR POR DNI:");
+        jLabel57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        SalesTab.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 130, 30));
+
+        jTextField22.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField22.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField22.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        SalesTab.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 150, 30));
+
+        jLabel58.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel58.setText("BUSCAR POR FECHA:");
+        jLabel58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        SalesTab.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 150, 30));
+
+        jTextField27.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField27.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField27.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        SalesTab.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 110, 30));
+
+        jLabel59.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel59.setText("BUSCAR ENTRE:");
+        jLabel59.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        SalesTab.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 40, 120, 30));
+
+        jTextField28.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField28.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField28.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        SalesTab.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, 110, 30));
+
+        jButton9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton9.setText("MOSTRAR PRODUCTOS DE LA VENTA SELECCIONADA");
+        SalesTab.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, 520, 30));
+
+        jButton10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton10.setText("BUSCAR");
+        SalesTab.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 40, 90, 30));
+
+        jTable7.setBackground(new java.awt.Color(255, 255, 255));
+        jTable7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTable7.setForeground(new java.awt.Color(0, 0, 0));
+        jTable7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Cliente", "Forma de Pago", "Costo Total", "Fecha"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane7.setViewportView(jTable7);
+
+        SalesTab.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 610, 560));
+
+        jTable6.setBackground(new java.awt.Color(255, 255, 255));
+        jTable6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTable6.setForeground(new java.awt.Color(0, 0, 0));
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Producto", "Costo Unitario", "Cantidad", "SubTotal"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane6.setViewportView(jTable6);
+
+        SalesTab.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 130, 520, 520));
+
+        jSeparator9.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
+        SalesTab.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1140, 10));
+
         jTabbedPane1.addTab("tab4", SalesTab);
+        jTabbedPane1.addTab("tab5", MyCompanyTab);
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 1150, 700));
 
@@ -872,8 +1018,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel BoxTab;
     private javax.swing.JPanel CustomerTab;
     private javax.swing.JPanel InventoryTab;
+    private javax.swing.JPanel MyCompanyTab;
     private javax.swing.JPanel SalesTab;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -881,6 +1029,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
@@ -928,11 +1077,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -941,17 +1095,22 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable6;
+    private javax.swing.JTable jTable7;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
@@ -963,11 +1122,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
     private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
     private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField6;
