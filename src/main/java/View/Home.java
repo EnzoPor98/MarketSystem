@@ -1063,11 +1063,11 @@ public class Home extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Cliente", "Forma de Pago", "Costo Total", "Fecha"
+                "ID", "Cart", "Cliente", "Forma de Pago", "Costo Total", "Fecha"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, true, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1154,11 +1154,9 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     // *************************************************************************
-    
-    
-    
+
     // *************************************************************************
-    // ******************************************************** PROGRAM BUTTONS.
+    // ********************************************** CLOSE & MINIMIEZE BUTTONS.
     // *************************************************************************
     private void closeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeBtnMouseClicked
         System.exit(0);
@@ -1168,8 +1166,7 @@ public class Home extends javax.swing.JFrame {
         this.setExtendedState(ICONIFIED);
     }//GEN-LAST:event_minimizeBtnMouseClicked
     // *************************************************************************
-    
-    
+
     // *************************************************************************
     // ************************************************** TABBED PANE SELECTION.
     // *************************************************************************
@@ -1189,9 +1186,7 @@ public class Home extends javax.swing.JFrame {
         Tabs.setSelectedIndex(3);
     }//GEN-LAST:event_salesTabBtnMouseClicked
     // *************************************************************************
-    
-    
-    
+
     // *************************************************************************
     // **************************************************************** BOX TAB.
     // *************************************************************************
@@ -1231,9 +1226,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_finishSaleBtnMouseClicked
     // *************************************************************************
-    
-    
-    
+
     // *************************************************************************
     // ********************************************************* CUSTOMER PANEL.
     // *************************************************************************
@@ -1253,9 +1246,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cleanCustBtnMouseClicked
     // *************************************************************************
-    
-    
-    
+
     // *************************************************************************
     // ******************************************************** INVENTORY PANEL.
     // *************************************************************************
@@ -1283,9 +1274,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cleanProdBtnMouseClicked
     // *************************************************************************
-    
-    
-    
+
     // *************************************************************************
     // ************************************************************ SALES PANEL.
     // *************************************************************************
@@ -1309,8 +1298,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_datesPdfBtnMouseClicked
     // *************************************************************************
-    
-    
+
     // *************************************************************************
     // ******************************************************************* MAIN.
     // *************************************************************************
@@ -1319,8 +1307,11 @@ public class Home extends javax.swing.JFrame {
             new Home().setVisible(true);
         });
     }
+    // *************************************************************************
 
+    // *************************************************************************
     // ***************************************************** NETBEANS GENERATED.
+    // *************************************************************************
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BoxTab;
     private javax.swing.JPanel CustomerTab;
