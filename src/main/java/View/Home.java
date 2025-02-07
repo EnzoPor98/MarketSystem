@@ -1,5 +1,11 @@
 package View;
 
+import Controller.CartJpaController;
+import Controller.CustomerJpaController;
+import Controller.ProdCartJpaController;
+import Controller.ProductJpaController;
+import Controller.SaleJpaController;
+
 public class Home extends javax.swing.JFrame {
 
     public Home() {
@@ -1314,6 +1320,12 @@ public class Home extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Home().setVisible(true);
+            
+            CartJpaController cartCtrl = new CartJpaController();
+            CustomerJpaController custCtrl = new CustomerJpaController();
+            ProdCartJpaController prodCartCtrl = new ProdCartJpaController();
+            ProductJpaController prodCtrl = new ProductJpaController();
+            SaleJpaController saleCtrl = new SaleJpaController();
         });
     }
     // *************************************************************************
