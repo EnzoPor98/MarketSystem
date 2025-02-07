@@ -198,6 +198,7 @@ public class Home extends javax.swing.JFrame {
         boxTabBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         boxTabBtn.setForeground(new java.awt.Color(0, 0, 0));
         boxTabBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        boxTabBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Box.png"))); // NOI18N
         boxTabBtn.setText("CAJA");
         boxTabBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         boxTabBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -213,6 +214,7 @@ public class Home extends javax.swing.JFrame {
         customerTabBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         customerTabBtn.setForeground(new java.awt.Color(0, 0, 0));
         customerTabBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        customerTabBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Customer.png"))); // NOI18N
         customerTabBtn.setText("CLIENTES");
         customerTabBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         customerTabBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -228,6 +230,7 @@ public class Home extends javax.swing.JFrame {
         inventoryTabBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         inventoryTabBtn.setForeground(new java.awt.Color(0, 0, 0));
         inventoryTabBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        inventoryTabBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Inventory.png"))); // NOI18N
         inventoryTabBtn.setText("INVENTARIO");
         inventoryTabBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         inventoryTabBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -243,6 +246,7 @@ public class Home extends javax.swing.JFrame {
         salesTabBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         salesTabBtn.setForeground(new java.awt.Color(0, 0, 0));
         salesTabBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        salesTabBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Sales.png"))); // NOI18N
         salesTabBtn.setText("VENTAS");
         salesTabBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         salesTabBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -403,6 +407,7 @@ public class Home extends javax.swing.JFrame {
         finishSaleBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         finishSaleBtn.setForeground(new java.awt.Color(0, 0, 0));
         finishSaleBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        finishSaleBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Okey.png"))); // NOI18N
         finishSaleBtn.setText("FINALIZAR OPERACION");
         finishSaleBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         finishSaleBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -505,7 +510,7 @@ public class Home extends javax.swing.JFrame {
         paymentMethodBox.setBackground(new java.awt.Color(255, 255, 255));
         paymentMethodBox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         paymentMethodBox.setForeground(new java.awt.Color(0, 0, 0));
-        paymentMethodBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Efectivo", "Tarjeta Virtual", "Tarjeta de Credito/Debito" }));
+        paymentMethodBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Efectivo", "Tarjeta Virtual", "Tarjeta de Credito/Debito" }));
         BoxTab.add(paymentMethodBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 640, 200, 30));
 
         jLabel53.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -545,6 +550,7 @@ public class Home extends javax.swing.JFrame {
         cancelSaleBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cancelSaleBtn.setForeground(new java.awt.Color(0, 0, 0));
         cancelSaleBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        cancelSaleBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cancel.png"))); // NOI18N
         cancelSaleBtn.setText("CANCELAR OPERACION");
         cancelSaleBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cancelSaleBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -631,6 +637,7 @@ public class Home extends javax.swing.JFrame {
         addCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addCustBtn.setForeground(new java.awt.Color(0, 0, 0));
         addCustBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        addCustBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Add.png"))); // NOI18N
         addCustBtn.setText("AGREGAR");
         addCustBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         addCustBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -645,6 +652,7 @@ public class Home extends javax.swing.JFrame {
         editCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         editCustBtn.setForeground(new java.awt.Color(0, 0, 0));
         editCustBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        editCustBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Edit.png"))); // NOI18N
         editCustBtn.setText("MODIFICAR");
         editCustBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         editCustBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -659,6 +667,7 @@ public class Home extends javax.swing.JFrame {
         deleteCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         deleteCustBtn.setForeground(new java.awt.Color(0, 0, 0));
         deleteCustBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        deleteCustBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Delete.png"))); // NOI18N
         deleteCustBtn.setText("ELIMINAR");
         deleteCustBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         deleteCustBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -681,6 +690,7 @@ public class Home extends javax.swing.JFrame {
         cleanCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cleanCustBtn.setForeground(new java.awt.Color(0, 0, 0));
         cleanCustBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        cleanCustBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Refresh.png"))); // NOI18N
         cleanCustBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cleanCustBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cleanCustBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -737,9 +747,9 @@ public class Home extends javax.swing.JFrame {
         jLabel39.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(0, 0, 0));
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel39.setText("LA BUSQUEDA SE REALIZA MEDIANTE EL DNI DEL CLIENTE...");
+        jLabel39.setText("(LA BUSQUEDA SE REALIZA MEDIANTE EL DNI DEL CLIENTE...)");
         jLabel39.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 420, 30));
+        CustomerTab.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 430, 30));
 
         dniCustField.setBackground(new java.awt.Color(255, 255, 255));
         dniCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -785,6 +795,7 @@ public class Home extends javax.swing.JFrame {
         cleanProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cleanProdBtn.setForeground(new java.awt.Color(0, 0, 0));
         cleanProdBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        cleanProdBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Refresh.png"))); // NOI18N
         cleanProdBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cleanProdBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cleanProdBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -866,6 +877,7 @@ public class Home extends javax.swing.JFrame {
         addProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addProdBtn.setForeground(new java.awt.Color(0, 0, 0));
         addProdBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        addProdBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Add.png"))); // NOI18N
         addProdBtn.setText("AGREGAR");
         addProdBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         addProdBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -880,6 +892,7 @@ public class Home extends javax.swing.JFrame {
         editProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         editProdBtn.setForeground(new java.awt.Color(0, 0, 0));
         editProdBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        editProdBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Edit.png"))); // NOI18N
         editProdBtn.setText("MODIFICAR");
         editProdBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         editProdBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -894,6 +907,7 @@ public class Home extends javax.swing.JFrame {
         deleteProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         deleteProdBtn.setForeground(new java.awt.Color(0, 0, 0));
         deleteProdBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        deleteProdBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Delete.png"))); // NOI18N
         deleteProdBtn.setText("ELIMINAR");
         deleteProdBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         deleteProdBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1123,6 +1137,7 @@ public class Home extends javax.swing.JFrame {
         datesPdfBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         datesPdfBtn.setForeground(new java.awt.Color(0, 0, 0));
         datesPdfBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        datesPdfBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PDF.png"))); // NOI18N
         datesPdfBtn.setText("PDF DE LAS VENTAS ENTRE FECHAS");
         datesPdfBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         datesPdfBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1137,6 +1152,7 @@ public class Home extends javax.swing.JFrame {
         todayPdfBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         todayPdfBtn.setForeground(new java.awt.Color(0, 0, 0));
         todayPdfBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        todayPdfBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PDF.png"))); // NOI18N
         todayPdfBtn.setText("PDF DE LAS VENTAS DE HOY");
         todayPdfBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         todayPdfBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1151,6 +1167,7 @@ public class Home extends javax.swing.JFrame {
         datePdfBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         datePdfBtn.setForeground(new java.awt.Color(0, 0, 0));
         datePdfBtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        datePdfBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PDF.png"))); // NOI18N
         datePdfBtn.setText("PDF DE LAS VENTAS DE TAL FECHA");
         datePdfBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         datePdfBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
