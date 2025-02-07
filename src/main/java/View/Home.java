@@ -33,7 +33,7 @@ public class Home extends javax.swing.JFrame {
         addBtn = new javax.swing.JLabel();
         productField = new javax.swing.JTextField();
         jLabel44 = new javax.swing.JLabel();
-        quantityField = new javax.swing.JTextField();
+        amountField = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
         cartTable = new javax.swing.JTable();
         virtualBtn = new javax.swing.JButton();
@@ -61,6 +61,7 @@ public class Home extends javax.swing.JFrame {
         jLabel55 = new javax.swing.JLabel();
         MoneyDeliveredField = new javax.swing.JTextField();
         cancelSaleBtn = new javax.swing.JLabel();
+        infoSaleLabel = new javax.swing.JLabel();
         CustomerTab = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -270,28 +271,28 @@ public class Home extends javax.swing.JFrame {
                 subtractBtnMouseClicked(evt);
             }
         });
-        BoxTab.add(subtractBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, 30, 30));
+        BoxTab.add(subtractBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 60, 30, 30));
 
         subCostField.setEditable(false);
         subCostField.setBackground(new java.awt.Color(255, 255, 255));
         subCostField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         subCostField.setForeground(new java.awt.Color(0, 0, 0));
         subCostField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(subCostField, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 0, 130, 30));
+        BoxTab.add(subCostField, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 60, 130, 30));
 
         jLabel41.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(0, 0, 0));
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel41.setText("FACTURACION...");
         jLabel41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 790, 30));
+        BoxTab.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 560, 790, 30));
 
         jLabel42.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(0, 0, 0));
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel42.setText("SUBTOTAL: $");
         jLabel42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 100, 30));
+        BoxTab.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 60, 100, 30));
 
         addBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -305,27 +306,27 @@ public class Home extends javax.swing.JFrame {
                 addBtnMouseClicked(evt);
             }
         });
-        BoxTab.add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, 30, 30));
+        BoxTab.add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 60, 30, 30));
 
         productField.setBackground(new java.awt.Color(255, 255, 255));
         productField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         productField.setForeground(new java.awt.Color(0, 0, 0));
         productField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(productField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 350, 30));
+        BoxTab.add(productField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 350, 30));
 
         jLabel44.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(0, 0, 0));
         jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel44.setText("CANTIDAD:");
         jLabel44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 80, 30));
+        BoxTab.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 60, 80, 30));
 
-        quantityField.setEditable(false);
-        quantityField.setBackground(new java.awt.Color(255, 255, 255));
-        quantityField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        quantityField.setForeground(new java.awt.Color(0, 0, 0));
-        quantityField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(quantityField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 80, 30));
+        amountField.setEditable(false);
+        amountField.setBackground(new java.awt.Color(255, 255, 255));
+        amountField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        amountField.setForeground(new java.awt.Color(0, 0, 0));
+        amountField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        BoxTab.add(amountField, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 60, 80, 30));
 
         cartTable.setBackground(new java.awt.Color(255, 255, 255));
         cartTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -348,7 +349,7 @@ public class Home extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(cartTable);
 
-        BoxTab.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 1140, 200));
+        BoxTab.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 1140, 200));
 
         virtualBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         virtualBtn.setText("CARGA VIRTUAL");
@@ -357,18 +358,18 @@ public class Home extends javax.swing.JFrame {
                 virtualBtnActionPerformed(evt);
             }
         });
-        BoxTab.add(virtualBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, -1, 30));
+        BoxTab.add(virtualBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, -1, 30));
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
-        BoxTab.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 1140, 10));
+        BoxTab.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 550, 1140, 10));
 
         jLabel45.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(0, 0, 0));
         jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel45.setText("PRODUCTO:");
         jLabel45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 30));
+        BoxTab.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 90, 30));
 
         prodTable.setBackground(new java.awt.Color(255, 255, 255));
         prodTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -391,7 +392,7 @@ public class Home extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(prodTable);
 
-        BoxTab.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1140, 180));
+        BoxTab.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 1140, 180));
 
         finishSaleBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         finishSaleBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -405,7 +406,7 @@ public class Home extends javax.swing.JFrame {
                 finishSaleBtnMouseClicked(evt);
             }
         });
-        BoxTab.add(finishSaleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 590, 240, 60));
+        BoxTab.add(finishSaleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 650, 240, 60));
 
         addToCartBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         addToCartBtn.setText("AGREGAR AL CARRITO");
@@ -414,7 +415,7 @@ public class Home extends javax.swing.JFrame {
                 addToCartBtnActionPerformed(evt);
             }
         });
-        BoxTab.add(addToCartBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 0, 170, 30));
+        BoxTab.add(addToCartBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 60, 170, 30));
 
         emptyCartBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         emptyCartBtn.setText("VACIAR CARRITO");
@@ -423,52 +424,52 @@ public class Home extends javax.swing.JFrame {
                 emptyCartBtnActionPerformed(evt);
             }
         });
-        BoxTab.add(emptyCartBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 240, -1, 30));
+        BoxTab.add(emptyCartBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 300, -1, 30));
 
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
-        BoxTab.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 1140, 10));
+        BoxTab.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 1140, 10));
 
         jLabel47.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(0, 0, 0));
         jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel47.setText("CARRITO DE COMPRAS...");
         jLabel47.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 180, 30));
+        BoxTab.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, 180, 30));
 
         jLabel48.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(0, 0, 0));
         jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel48.setText("DNI CLIENTE:");
         jLabel48.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 620, 100, 30));
+        BoxTab.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 680, 100, 30));
 
         jLabel49.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel49.setText("FECHA:");
         jLabel49.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 60, 30));
+        BoxTab.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 640, 60, 30));
 
         dateBillField.setEditable(false);
         dateBillField.setBackground(new java.awt.Color(255, 255, 255));
         dateBillField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         dateBillField.setForeground(new java.awt.Color(0, 0, 0));
         dateBillField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(dateBillField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 580, 180, 30));
+        BoxTab.add(dateBillField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 640, 180, 30));
 
         jLabel51.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel51.setForeground(new java.awt.Color(0, 0, 0));
         jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel51.setText("ENTREGADO: $");
         jLabel51.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 600, 120, 30));
+        BoxTab.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 640, 120, 30));
 
         dniField.setBackground(new java.awt.Color(255, 255, 255));
         dniField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         dniField.setForeground(new java.awt.Color(0, 0, 0));
         dniField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(dniField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, 140, 30));
+        BoxTab.add(dniField, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 680, 140, 30));
 
         removeProdBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         removeProdBtn.setText("DESCARTAR PRODUCTO");
@@ -477,7 +478,7 @@ public class Home extends javax.swing.JFrame {
                 removeProdBtnActionPerformed(evt);
             }
         });
-        BoxTab.add(removeProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 240, -1, 30));
+        BoxTab.add(removeProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 300, -1, 30));
 
         SubeBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SubeBtn.setText("CARGA SUBE");
@@ -486,54 +487,54 @@ public class Home extends javax.swing.JFrame {
                 SubeBtnActionPerformed(evt);
             }
         });
-        BoxTab.add(SubeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 240, -1, 30));
+        BoxTab.add(SubeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, -1, 30));
 
         jLabel52.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(0, 0, 0));
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel52.setText("ID:");
         jLabel52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 540, 30, 30));
+        BoxTab.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 600, 30, 30));
 
         paymentMethodBox.setBackground(new java.awt.Color(255, 255, 255));
         paymentMethodBox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         paymentMethodBox.setForeground(new java.awt.Color(0, 0, 0));
         paymentMethodBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Efectivo", "Tarjeta Virtual", "Tarjeta de Credito/Debito" }));
-        BoxTab.add(paymentMethodBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 200, 30));
+        BoxTab.add(paymentMethodBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 640, 200, 30));
 
         jLabel53.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel53.setForeground(new java.awt.Color(0, 0, 0));
         jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel53.setText("FORMA DE PAGO:");
         jLabel53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 560, 130, 30));
+        BoxTab.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 600, 130, 30));
 
         idBillField.setEditable(false);
         idBillField.setBackground(new java.awt.Color(255, 255, 255));
         idBillField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         idBillField.setForeground(new java.awt.Color(0, 0, 0));
         idBillField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(idBillField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 210, 30));
+        BoxTab.add(idBillField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 600, 210, 30));
 
         totalCostField.setEditable(false);
         totalCostField.setBackground(new java.awt.Color(255, 255, 255));
         totalCostField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         totalCostField.setForeground(new java.awt.Color(0, 0, 0));
         totalCostField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(totalCostField, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 560, 130, 30));
+        BoxTab.add(totalCostField, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 600, 130, 30));
 
         jLabel55.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(0, 0, 0));
         jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel55.setText("COSTO TOTAL: $");
         jLabel55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BoxTab.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 120, 30));
+        BoxTab.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 600, 120, 30));
 
         MoneyDeliveredField.setBackground(new java.awt.Color(255, 255, 255));
         MoneyDeliveredField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         MoneyDeliveredField.setForeground(new java.awt.Color(0, 0, 0));
         MoneyDeliveredField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        BoxTab.add(MoneyDeliveredField, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 600, 130, 30));
+        BoxTab.add(MoneyDeliveredField, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 640, 130, 30));
 
         cancelSaleBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cancelSaleBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -547,7 +548,15 @@ public class Home extends javax.swing.JFrame {
                 cancelSaleBtnMouseClicked(evt);
             }
         });
-        BoxTab.add(cancelSaleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 500, 240, 60));
+        BoxTab.add(cancelSaleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 560, 240, 60));
+
+        infoSaleLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        infoSaleLabel.setForeground(new java.awt.Color(0, 0, 0));
+        infoSaleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        infoSaleLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        infoSaleLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        infoSaleLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BoxTab.add(infoSaleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 680, 500, 30));
 
         Tabs.addTab("tab3", BoxTab);
 
@@ -558,60 +567,60 @@ public class Home extends javax.swing.JFrame {
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel26.setText("AGREGA, ACTUALIZA O ELIMINA CLIENTES DE TU BASE DE DATOS...");
         jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 30));
+        CustomerTab.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 1140, 30));
 
         jLabel27.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(0, 0, 0));
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel27.setText("CODIGO POSTAL:");
         jLabel27.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 90, 120, 30));
+        CustomerTab.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 150, 120, 30));
 
         mailCustField.setBackground(new java.awt.Color(255, 255, 255));
         mailCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         mailCustField.setForeground(new java.awt.Color(0, 0, 0));
         mailCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(mailCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 430, 30));
+        CustomerTab.add(mailCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 430, 30));
 
         jLabel28.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(0, 0, 0));
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel28.setText("ID:");
         jLabel28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 20, 30));
+        CustomerTab.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 20, 30));
 
         idCustField.setEditable(false);
         idCustField.setBackground(new java.awt.Color(255, 255, 255));
         idCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         idCustField.setForeground(new java.awt.Color(0, 0, 0));
         idCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(idCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 160, 30));
+        CustomerTab.add(idCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 160, 30));
 
         jLabel29.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(0, 0, 0));
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel29.setText("NOMBRE:");
         jLabel29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 70, 30));
+        CustomerTab.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 70, 30));
 
         nameCustField.setBackground(new java.awt.Color(255, 255, 255));
         nameCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         nameCustField.setForeground(new java.awt.Color(0, 0, 0));
         nameCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(nameCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 350, 30));
+        CustomerTab.add(nameCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, 350, 30));
 
         jLabel30.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(0, 0, 0));
         jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel30.setText("DNI:");
         jLabel30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, 40, 30));
+        CustomerTab.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 100, 40, 30));
 
         serachCustField.setBackground(new java.awt.Color(255, 255, 255));
         serachCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         serachCustField.setForeground(new java.awt.Color(0, 0, 0));
         serachCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(serachCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 250, 30));
+        CustomerTab.add(serachCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 250, 30));
 
         addCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addCustBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -625,7 +634,7 @@ public class Home extends javax.swing.JFrame {
                 addCustBtnMouseClicked(evt);
             }
         });
-        CustomerTab.add(addCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 170, 60));
+        CustomerTab.add(addCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 170, 60));
 
         editCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         editCustBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -639,7 +648,7 @@ public class Home extends javax.swing.JFrame {
                 editCustBtnMouseClicked(evt);
             }
         });
-        CustomerTab.add(editCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 170, 60));
+        CustomerTab.add(editCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 170, 60));
 
         deleteCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         deleteCustBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -653,7 +662,7 @@ public class Home extends javax.swing.JFrame {
                 deleteCustBtnMouseClicked(evt);
             }
         });
-        CustomerTab.add(deleteCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 170, 60));
+        CustomerTab.add(deleteCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 170, 60));
 
         infoCustLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         infoCustLabel.setForeground(new java.awt.Color(0, 0, 0));
@@ -661,7 +670,7 @@ public class Home extends javax.swing.JFrame {
         infoCustLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         infoCustLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         infoCustLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(infoCustLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 480, 60));
+        CustomerTab.add(infoCustLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 480, 60));
 
         cleanCustBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         cleanCustBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -674,63 +683,63 @@ public class Home extends javax.swing.JFrame {
                 cleanCustBtnMouseClicked(evt);
             }
         });
-        CustomerTab.add(cleanCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 140, 70, 60));
+        CustomerTab.add(cleanCustBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 200, 70, 60));
 
         jLabel36.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(0, 0, 0));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel36.setText("DIRECCION:");
         jLabel36.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 40, 90, 30));
+        CustomerTab.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 100, 90, 30));
 
         codCustField.setBackground(new java.awt.Color(255, 255, 255));
         codCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         codCustField.setForeground(new java.awt.Color(0, 0, 0));
         codCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(codCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 90, 190, 30));
+        CustomerTab.add(codCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 150, 190, 30));
 
         jLabel37.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(0, 0, 0));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel37.setText("TELEFONO:");
         jLabel37.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 90, 30));
+        CustomerTab.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 90, 30));
 
         phoneCustField.setBackground(new java.awt.Color(255, 255, 255));
         phoneCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         phoneCustField.setForeground(new java.awt.Color(0, 0, 0));
         phoneCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(phoneCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 190, 30));
+        CustomerTab.add(phoneCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 190, 30));
 
         jLabel38.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(0, 0, 0));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel38.setText("CORREO:");
         jLabel38.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 70, 30));
+        CustomerTab.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 70, 30));
 
         addressCustField.setBackground(new java.awt.Color(255, 255, 255));
         addressCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         addressCustField.setForeground(new java.awt.Color(0, 0, 0));
         addressCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(addressCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 40, 190, 30));
+        CustomerTab.add(addressCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 100, 190, 30));
 
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        CustomerTab.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 1140, 10));
+        CustomerTab.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 1140, 10));
 
         jLabel39.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(0, 0, 0));
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel39.setText("LA BUSQUEDA SE REALIZA MEDIANTE EL DNI DEL CLIENTE...");
         jLabel39.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 420, 30));
+        CustomerTab.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 420, 30));
 
         dniCustField.setBackground(new java.awt.Color(255, 255, 255));
         dniCustField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         dniCustField.setForeground(new java.awt.Color(0, 0, 0));
         dniCustField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CustomerTab.add(dniCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 140, 30));
+        CustomerTab.add(dniCustField, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 100, 140, 30));
 
         customerTable.setBackground(new java.awt.Color(255, 255, 255));
         customerTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -753,14 +762,14 @@ public class Home extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(customerTable);
 
-        CustomerTab.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1140, 380));
+        CustomerTab.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 1140, 380));
 
         jLabel40.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(0, 0, 0));
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel40.setText("BUSCADOR:");
         jLabel40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        CustomerTab.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 90, 30));
+        CustomerTab.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 90, 30));
 
         Tabs.addTab("tab2", CustomerTab);
 
@@ -778,75 +787,75 @@ public class Home extends javax.swing.JFrame {
                 cleanProdBtnMouseClicked(evt);
             }
         });
-        InventoryTab.add(cleanProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 140, 70, 60));
+        InventoryTab.add(cleanProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 200, 70, 60));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setText("COSTO: $");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 40, 70, 30));
+        InventoryTab.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 100, 70, 30));
 
         jLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel15.setText("ULTIMO INGRESO:");
         jLabel15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 90, 130, 30));
+        InventoryTab.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 150, 130, 30));
 
         dateProdField.setEditable(false);
         dateProdField.setBackground(new java.awt.Color(255, 255, 255));
         dateProdField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         dateProdField.setForeground(new java.awt.Color(0, 0, 0));
         dateProdField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        InventoryTab.add(dateProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 90, 150, 30));
+        InventoryTab.add(dateProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 150, 150, 30));
 
         jLabel16.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel16.setText("PRODUCTO:");
         jLabel16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 90, 30));
+        InventoryTab.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 100, 90, 30));
 
         stockProdField.setBackground(new java.awt.Color(255, 255, 255));
         stockProdField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         stockProdField.setForeground(new java.awt.Color(0, 0, 0));
         stockProdField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        InventoryTab.add(stockProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 90, 120, 30));
+        InventoryTab.add(stockProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 120, 30));
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 0, 0));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel17.setText("CATEGORIA:");
         jLabel17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 90, 30));
+        InventoryTab.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 90, 30));
 
         jLabel18.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel18.setText("ID:");
         jLabel18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 20, 30));
+        InventoryTab.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 20, 30));
 
         costProdField.setBackground(new java.awt.Color(255, 255, 255));
         costProdField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         costProdField.setForeground(new java.awt.Color(0, 0, 0));
         costProdField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        InventoryTab.add(costProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 40, 150, 30));
+        InventoryTab.add(costProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 100, 150, 30));
 
         jLabel19.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel19.setText("STOCK:");
         jLabel19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, 60, 30));
+        InventoryTab.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 150, 60, 30));
 
         idProdField.setEditable(false);
         idProdField.setBackground(new java.awt.Color(255, 255, 255));
         idProdField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         idProdField.setForeground(new java.awt.Color(0, 0, 0));
         idProdField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        InventoryTab.add(idProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 160, 30));
+        InventoryTab.add(idProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 160, 30));
 
         addProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         addProdBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -860,7 +869,7 @@ public class Home extends javax.swing.JFrame {
                 addProdBtnMouseClicked(evt);
             }
         });
-        InventoryTab.add(addProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 170, 60));
+        InventoryTab.add(addProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 170, 60));
 
         editProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         editProdBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -874,7 +883,7 @@ public class Home extends javax.swing.JFrame {
                 editProdBtnMouseClicked(evt);
             }
         });
-        InventoryTab.add(editProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 170, 60));
+        InventoryTab.add(editProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 170, 60));
 
         deleteProdBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         deleteProdBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -888,7 +897,7 @@ public class Home extends javax.swing.JFrame {
                 deleteProdBtnMouseClicked(evt);
             }
         });
-        InventoryTab.add(deleteProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 170, 60));
+        InventoryTab.add(deleteProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 170, 60));
 
         infoProdLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         infoProdLabel.setForeground(new java.awt.Color(0, 0, 0));
@@ -896,42 +905,42 @@ public class Home extends javax.swing.JFrame {
         infoProdLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         infoProdLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         infoProdLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(infoProdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 480, 60));
+        InventoryTab.add(infoProdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 480, 60));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        InventoryTab.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 1140, 10));
+        InventoryTab.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 1140, 10));
 
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(0, 0, 0));
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("AGREGA, ACTUALIZA O ELIMINA LOS PRODUCTOS DE TU INVENTARIO...");
         jLabel24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 30));
+        InventoryTab.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 1140, 30));
 
         nameProdField.setBackground(new java.awt.Color(255, 255, 255));
         nameProdField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         nameProdField.setForeground(new java.awt.Color(0, 0, 0));
         nameProdField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        InventoryTab.add(nameProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 610, 30));
+        InventoryTab.add(nameProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, 610, 30));
 
         jLabel25.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(0, 0, 0));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel25.setText("BUSCADOR:");
         jLabel25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        InventoryTab.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 90, 30));
+        InventoryTab.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 90, 30));
 
         searchProdField.setBackground(new java.awt.Color(255, 255, 255));
         searchProdField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         searchProdField.setForeground(new java.awt.Color(0, 0, 0));
         searchProdField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        InventoryTab.add(searchProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 630, 30));
+        InventoryTab.add(searchProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 630, 30));
 
         categProdField.setBackground(new java.awt.Color(255, 255, 255));
         categProdField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         categProdField.setForeground(new java.awt.Color(0, 0, 0));
-        InventoryTab.add(categProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 270, 30));
+        InventoryTab.add(categProdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 270, 30));
 
         productTable.setBackground(new java.awt.Color(255, 255, 255));
         productTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -954,7 +963,7 @@ public class Home extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(productTable);
 
-        InventoryTab.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1140, 380));
+        InventoryTab.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 1140, 380));
 
         removeCategBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         removeCategBtn.setText("ELIMINAR CAT.");
@@ -963,7 +972,7 @@ public class Home extends javax.swing.JFrame {
                 removeCategBtnActionPerformed(evt);
             }
         });
-        InventoryTab.add(removeCategBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, 120, 30));
+        InventoryTab.add(removeCategBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 120, 30));
 
         addCategBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         addCategBtn.setText("AGREGAR CAT.");
@@ -972,7 +981,7 @@ public class Home extends javax.swing.JFrame {
                 addCategBtnActionPerformed(evt);
             }
         });
-        InventoryTab.add(addCategBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 120, 30));
+        InventoryTab.add(addCategBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, 120, 30));
 
         Tabs.addTab("InventoryTab", InventoryTab);
 
@@ -983,59 +992,59 @@ public class Home extends javax.swing.JFrame {
         jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel50.setText("Y");
         jLabel50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        SalesTab.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 40, 20, 30));
+        SalesTab.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 100, 20, 30));
 
         date2SalesField.setBackground(new java.awt.Color(255, 255, 255));
         date2SalesField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         date2SalesField.setForeground(new java.awt.Color(0, 0, 0));
         date2SalesField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        SalesTab.add(date2SalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 110, 30));
+        SalesTab.add(date2SalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 100, 110, 30));
 
         jLabel54.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel54.setForeground(new java.awt.Color(0, 0, 0));
         jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel54.setText("OBSERVA TODAS LAS VENTAS QUE SE HAN ALMACENADO EN TU BASE DE DATOS...");
         jLabel54.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        SalesTab.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 30));
+        SalesTab.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 1140, 30));
 
         jLabel57.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(0, 0, 0));
         jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel57.setText("BUSCAR POR DNI:");
         jLabel57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        SalesTab.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 130, 30));
+        SalesTab.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 130, 30));
 
         dniSalesField.setBackground(new java.awt.Color(255, 255, 255));
         dniSalesField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         dniSalesField.setForeground(new java.awt.Color(0, 0, 0));
         dniSalesField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        SalesTab.add(dniSalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 150, 30));
+        SalesTab.add(dniSalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 150, 30));
 
         jLabel58.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(0, 0, 0));
         jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel58.setText("BUSCAR POR FECHA:");
         jLabel58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        SalesTab.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 150, 30));
+        SalesTab.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, 150, 30));
 
         dateSalesField.setBackground(new java.awt.Color(255, 255, 255));
         dateSalesField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         dateSalesField.setForeground(new java.awt.Color(0, 0, 0));
         dateSalesField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        SalesTab.add(dateSalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 110, 30));
+        SalesTab.add(dateSalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 110, 30));
 
         jLabel59.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(0, 0, 0));
         jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel59.setText("BUSCAR ENTRE:");
         jLabel59.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        SalesTab.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 40, 120, 30));
+        SalesTab.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 100, 120, 30));
 
         date1SalesField.setBackground(new java.awt.Color(255, 255, 255));
         date1SalesField.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         date1SalesField.setForeground(new java.awt.Color(0, 0, 0));
         date1SalesField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        SalesTab.add(date1SalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, 110, 30));
+        SalesTab.add(date1SalesField, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 100, 110, 30));
 
         showProdBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         showProdBtn.setText("MOSTRAR PRODUCTOS DE LA VENTA SELECCIONADA");
@@ -1044,7 +1053,7 @@ public class Home extends javax.swing.JFrame {
                 showProdBtnActionPerformed(evt);
             }
         });
-        SalesTab.add(showProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, 520, 30));
+        SalesTab.add(showProdBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, 520, 30));
 
         searchSalesBtn.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         searchSalesBtn.setText("BUSCAR");
@@ -1053,7 +1062,7 @@ public class Home extends javax.swing.JFrame {
                 searchSalesBtnActionPerformed(evt);
             }
         });
-        SalesTab.add(searchSalesBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 40, 90, 30));
+        SalesTab.add(searchSalesBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 100, 90, 30));
 
         salesTable.setBackground(new java.awt.Color(255, 255, 255));
         salesTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -1063,11 +1072,11 @@ public class Home extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Cart", "Cliente", "Forma de Pago", "Costo Total", "Fecha"
+                "Cart", "Cliente", "Forma de Pago", "Costo Total", "Fecha"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, true, false, false, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -1076,7 +1085,7 @@ public class Home extends javax.swing.JFrame {
         });
         jScrollPane7.setViewportView(salesTable);
 
-        SalesTab.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 610, 490));
+        SalesTab.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 610, 490));
 
         prodSalesTable.setBackground(new java.awt.Color(255, 255, 255));
         prodSalesTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -1099,11 +1108,11 @@ public class Home extends javax.swing.JFrame {
         });
         jScrollPane6.setViewportView(prodSalesTable);
 
-        SalesTab.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 130, 520, 450));
+        SalesTab.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 190, 520, 450));
 
         jSeparator9.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
-        SalesTab.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1140, 10));
+        SalesTab.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 1140, 10));
 
         datesPdfBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         datesPdfBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -1117,7 +1126,7 @@ public class Home extends javax.swing.JFrame {
                 datesPdfBtnMouseClicked(evt);
             }
         });
-        SalesTab.add(datesPdfBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 590, 330, 60));
+        SalesTab.add(datesPdfBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 650, 330, 60));
 
         todayPdfBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         todayPdfBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -1131,7 +1140,7 @@ public class Home extends javax.swing.JFrame {
                 todayPdfBtnMouseClicked(evt);
             }
         });
-        SalesTab.add(todayPdfBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 280, 60));
+        SalesTab.add(todayPdfBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, 280, 60));
 
         datePdfBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         datePdfBtn.setForeground(new java.awt.Color(0, 0, 0));
@@ -1145,11 +1154,11 @@ public class Home extends javax.swing.JFrame {
                 datePdfBtnMouseClicked(evt);
             }
         });
-        SalesTab.add(datePdfBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 590, 330, 60));
+        SalesTab.add(datePdfBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 650, 330, 60));
 
         Tabs.addTab("tab4", SalesTab);
 
-        getContentPane().add(Tabs, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 1150, 700));
+        getContentPane().add(Tabs, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 760));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1326,6 +1335,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel addProdBtn;
     private javax.swing.JButton addToCartBtn;
     private javax.swing.JTextField addressCustField;
+    private javax.swing.JTextField amountField;
     private javax.swing.JLabel boxTabBtn;
     private javax.swing.JLabel cancelSaleBtn;
     private javax.swing.JTable cartTable;
@@ -1359,6 +1369,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField idProdField;
     private javax.swing.JLabel infoCustLabel;
     private javax.swing.JLabel infoProdLabel;
+    private javax.swing.JLabel infoSaleLabel;
     private javax.swing.JLabel inventoryTabBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
@@ -1417,7 +1428,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTable prodTable;
     private javax.swing.JTextField productField;
     private javax.swing.JTable productTable;
-    private javax.swing.JTextField quantityField;
     private javax.swing.JButton removeCategBtn;
     private javax.swing.JButton removeProdBtn;
     private javax.swing.JLabel salesTabBtn;

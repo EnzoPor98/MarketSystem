@@ -1,14 +1,29 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
-public class Product {
+@Entity
+public class Product implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Basic
     private String name;
     private int cost;
     private String categ;
     private int stock;
+
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     // *************************************************************************

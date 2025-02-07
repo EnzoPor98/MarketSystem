@@ -1,50 +1,40 @@
 package Model;
 
 import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
-public class Sale implements Serializable {
+public class ProdCart implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToOne
-    private Cart cart;
-
     @ManyToOne
-    private Customer cust;
+    private Product prod;
 
     @Basic
-    private String payMet;
-    private int cost;
+    private int amount;
 
-    @Temporal(TemporalType.DATE)
-    private Date date;
+    @ManyToOne
+    private Cart cart;
 
     // *************************************************************************
     // *********************************************************** CONSTRUCTORS.
     // *************************************************************************
-    public Sale() {
+    public ProdCart() {
     }
 
-    public Sale(int id, Cart cart, Customer cust, String payMet, int cost, Date date) {
+    public ProdCart(int id, Product prod, int amount, Cart cart) {
         this.id = id;
+        this.prod = prod;
+        this.amount = amount;
         this.cart = cart;
-        this.cust = cust;
-        this.payMet = payMet;
-        this.cost = cost;
-        this.date = date;
     }
 
     // *************************************************************************
@@ -58,36 +48,20 @@ public class Sale implements Serializable {
         this.id = id;
     }
 
-    public Customer getCust() {
-        return cust;
+    public Product getProd() {
+        return prod;
     }
 
-    public void setCust(Customer cust) {
-        this.cust = cust;
+    public void setProd(Product prod) {
+        this.prod = prod;
     }
 
-    public String getPayMet() {
-        return payMet;
+    public int getAmount() {
+        return amount;
     }
 
-    public void setPayMet(String payMet) {
-        this.payMet = payMet;
-    }
-
-    public int getCost() {
-        return cost;
-    }
-
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
     public Cart getCart() {
